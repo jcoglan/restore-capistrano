@@ -5,8 +5,7 @@ var reStore = require('restore'),
 
 var server = new reStore({
   store:  store,
-  http:   {port: 4180},
-  https:  {force: true}
+  http:   {port: 4180}
 });
 
 server.boot();
