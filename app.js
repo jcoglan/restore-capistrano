@@ -3,7 +3,7 @@ var reStore = require('restore'),
 
 var server = new reStore({
   store:  store,
-  http:   {port: 80},
+  http:   {port: 4180},
   https:  {force: true}
 });
 
