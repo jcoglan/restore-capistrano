@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ -e tmp/restore.pid ]; then
+  start-stop-daemon --stop -p tmp/restore.pid
+fi
+
