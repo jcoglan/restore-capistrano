@@ -1,0 +1,8 @@
+{
+  "name": "restore-capistrano",
+  "version": "0.0.0",
+  "dependencies": {
+    "restore": ""
+  }
+}
+
