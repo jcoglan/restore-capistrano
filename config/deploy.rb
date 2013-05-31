@@ -9,6 +9,7 @@ role :app, "tmp1.jcoglan.com"
 
 namespace :deploy do
   task :finalize_update do
+    run "cd #{shared_dir} && mkdir -p data"
     run "cd #{latest_release} && ln -s #{shared_dir}/data ./data"
   end
 
