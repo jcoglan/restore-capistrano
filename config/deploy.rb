@@ -9,16 +9,16 @@ role :app, "tmp1.jcoglan.com"
 
 namespace :deploy do
   task :finalize_update do
-    run "cd #{shared_dir} && mkdir -p data"
-    run "cd #{latest_release} && ln -s #{shared_dir}/data ./data"
+    run "cd #{shared_path} && mkdir -p data"
+    run "cd #{current_path} && ln -s #{shared_path}/data ./data"
   end
 
   task :start do
-    run "cd #{latest_release} && ./script/start"
+    run "cd #{current_path} && ./script/start"
   end
 
   task :stop do
-    run "cd #{latest_release} && ./script/stop"
+    run "cd #{current_path} && ./script/stop"
   end
 
   task :restart do
