@@ -11,6 +11,7 @@ namespace :deploy do
   task :finalize_update do
     run "cd #{shared_path} && mkdir -p data"
     run "cd #{release_path} && ln -s #{shared_path}/data ./data"
+    run "cd #{release_path} && ln -s #{shared_path}/tmp ./tmp"
   end
 
   task :start do
