@@ -1,4 +1,4 @@
 #!/bin/bash
 
-start-stop-daemon --start --exec ~/.nvm/v0.10.9/bin/node ~+/app.js -bmp tmp/restore.pid
+start-stop-daemon --start --exec ~/.nvm/v0.10.9/bin/node ~+/app.js -bmp tmp/pids/restore.pid
 
