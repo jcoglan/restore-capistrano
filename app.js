@@ -1,5 +1,5 @@
 var reStore = require('restore'),
-    store   = new reStore.FileTree({path: __dirname + '/tree'});
+    store   = new reStore.FileTree({path: __dirname + '/data'});
 
 var server = new reStore({
   store:  store,
