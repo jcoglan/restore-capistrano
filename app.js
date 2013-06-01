@@ -5,7 +5,10 @@ var reStore = require('restore'),
 
 var server = new reStore({
   store:  store,
-  http:   {port: 4180}
+  http:   {port: 4180},
+  allow: {
+    signup: true
+  }
 });
 
 server.boot();
